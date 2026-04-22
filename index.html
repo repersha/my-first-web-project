@@ -57,6 +57,29 @@ css
   border-left:4px solid #0366d6;
   margin:20px 0;
   }
-  
+  <section>
+    <h2>Связаться со мной</h2>
+    <form id="contact-form">
+      <div>
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>label>
+        <input type="email"id="email" name="email" requited>
+      </div>
+      <div>
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submut">Отправить</button>button>
+    </form>
+  </section>
+  <skript>
+    document.getElementByld('contact-form').addEventListener('submut',function(e){e.preventDefault();
+    alert('Спасибо за сообщение!(Это демо-форма)');
+    this.reset();
+    })
+  </skript>
         
         
